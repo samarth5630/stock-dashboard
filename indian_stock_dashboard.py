@@ -22,7 +22,7 @@ if symbol:
         tech_signal = 'Buy' if latest['MA50'] > latest['MA200'] else 'Sell' if latest['MA50'] < latest['MA200'] else 'Hold'
 
         # News sentiment (via NewsAPI or simple fetched headlines)
-        api_key = "<YOUR_NEWSAPI_KEY>"
+        api_key = "733329e2d69a4cb2b32483a80a6b64c5"
         resp = requests.get(
             f"https://newsapi.org/v2/everything?q={symbol.split('.')[0]}&sortBy=publishedAt&apiKey={api_key}&pageSize=5"
         )
